@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-
 export default function CookieCount({ cookiesPerSecond, setCookies, cookies }) {
   //cookies going up by 1 with setInterval
   useEffect(() => {
@@ -10,7 +9,7 @@ export default function CookieCount({ cookiesPerSecond, setCookies, cookies }) {
     return () => {
       clearInterval(myInterval);
     };
-  }, [cookiesPerSecond]);
+  }, [cookiesPerSecond, setCookies]);
 
   //cookies increase with each click
   function handleIncrease() {
@@ -20,9 +19,9 @@ export default function CookieCount({ cookiesPerSecond, setCookies, cookies }) {
   return (
     <div>
       <img
-        src="./src/assets/Big-Cookie.png"
+        src="./src/assets/CookieMonster.jpg"
         onClick={handleIncrease}
-        alt="Big cookie"
+        alt="The CookieMonster!"
       />
       <h1 className="cookieDisplay">Cookies: {cookies}</h1>
     </div>

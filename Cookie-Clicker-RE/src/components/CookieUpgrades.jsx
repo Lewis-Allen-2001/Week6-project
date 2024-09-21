@@ -50,7 +50,7 @@ export default function CookieUpgrade({
   return (
     <div className="upgrade-container">
       {upgradeArray.map((upgrade) => (
-        <div key={upgrade.id}>
+        <div className="upgrade-item" key={upgrade.id}>
           <h2>{upgrade.name}</h2>
           <h2>Cost: {upgrade.cost}</h2>
           <h2>Increases CPS by: {upgrade.increase}</h2>
