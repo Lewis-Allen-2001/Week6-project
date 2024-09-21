@@ -97,8 +97,8 @@ h1.CPSDisplay {
   border-radius: 10px;
   box-shadow: 5px 7px rgb(0, 0, 0);
   justify-content: center;
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
 .upgrade-item {
