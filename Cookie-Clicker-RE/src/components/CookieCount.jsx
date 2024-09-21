@@ -17,7 +17,7 @@ export default function CookieCount({ cookiesPerSecond, setCookies, cookies }) {
   }
 
   //audio on click function
-  let audio = new Audio("./src/assets/CookieMonsterEatingCookie.mp3");
+  let audio = new Audio("public/CookieMonsterEatingCookie.mp3");
   function audioOnClick() {
     audio.play();
   }
@@ -31,7 +31,7 @@ export default function CookieCount({ cookiesPerSecond, setCookies, cookies }) {
     <div>
       <img
         className="Clicker"
-        src="./src/assets/CookieMonster.jpg"
+        src="public/CookieMonster.jpg"
         onClick={handleClick}
         alt="The CookieMonster!"
       />

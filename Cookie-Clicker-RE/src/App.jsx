@@ -33,12 +33,12 @@ export default function App() {
 
   return (
     <>
-      <img className="Logo" src="./src/assets/cookielogo.png" />
+      <img className="Logo" src="./public/cookielogo.png" />
       <h1>React Edition!</h1>
       <h2>Still Better Than What Grandma Used To Make!</h2>
       <h3>CPS = Cookies Per Second!</h3>
       <audio
-        src="./src/assets/SuperMario64WaterThemeDireDireDocks.mp3"
+        src="public/SuperMario64WaterThemeDireDireDocks.mp3"
         muted
         autoPlay
         controls

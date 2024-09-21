@@ -48,7 +48,7 @@ export default function CookieUpgrade({
   };
 
   //audio on Buy function
-  let audio2 = new Audio("./src/assets/hehe-boi!.mp3");
+  let audio2 = new Audio("public/assets/hehe-boi!.mp3");
   function audioOnBuy() {
     audio2.play();
   }
