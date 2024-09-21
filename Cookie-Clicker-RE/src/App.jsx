@@ -38,7 +38,7 @@ export default function App() {
       <h2>Still Better Than What Grandma Used To Make!</h2>
       <h3>CPS = Cookies Per Second!</h3>
       <audio
-        src="public/SuperMario64WaterThemeDireDireDocks.mp3"
+        src="./public/SuperMario64WaterThemeDireDireDocks.mp3"
         muted
         autoPlay
         controls
