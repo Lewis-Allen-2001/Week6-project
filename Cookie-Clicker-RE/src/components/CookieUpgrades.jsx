@@ -47,6 +47,12 @@ export default function CookieUpgrade({
     }
   };
 
+  //audio on Buy function
+  let audio2 = new Audio("./src/assets/hehe-boi!.mp3");
+  function audioOnBuy() {
+    audio2.play();
+  }
+
   return (
     <div className="upgrade-container">
       {upgradeArray.map((upgrade) => (
@@ -55,7 +61,10 @@ export default function CookieUpgrade({
           <h2>Cost: {upgrade.cost}</h2>
           <h2>Increases CPS by: {upgrade.increase}</h2>
           <button
-            onClick={() => handleBuyUpgrade(upgrade)}
+            onClick={() => {
+              handleBuyUpgrade(upgrade);
+              audioOnBuy();
+            }}
             disabled={cookies < upgrade.cost}
           >
             Buy

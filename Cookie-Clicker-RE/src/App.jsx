@@ -33,9 +33,16 @@ export default function App() {
 
   return (
     <>
-      <h1>Cookie Clicker React Edition!</h1>
+      <img className="Logo" src="./src/assets/cookielogo.png" />
+      <h1>React Edition!</h1>
       <h2>Still Better Than What Grandma Used To Make!</h2>
       <h3>CPS = Cookies Per Second!</h3>
+      <audio
+        src="./src/assets/SuperMario64WaterThemeDireDireDocks.mp3"
+        muted
+        autoPlay
+        controls
+      ></audio>
       <CookieCount
         cookies={cookies}
         setCookies={setCookies}
